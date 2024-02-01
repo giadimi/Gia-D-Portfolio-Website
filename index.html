@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="hero">
+        <!-- Video -->
+        <video autoplay muted loop plays-inline id="back-video">
+            <source src="Video/Background video.mp4" type="video/mp4">
+        </video>
+        <div class="gradient"></div>
+
+        <!-- Nav HTML -->
+        <section id="section-header">
+        <nav>  
+            <div class="nav">
+                <svg xmlns="http://www.w3.org/2000/svg" width="62" height="34" viewBox="0 0 62 34" fill="none"
+                    class="logo">
+                    <g clip-path="url(#clip0_123_4481)">
+                        <path
+                            d="M12.4065 29.1252C16.1714 33.6147 7.96021 36.6195 7.96021 30.7159V27.0749C7.96021 24.8831 6.92036 23.8226 5.77295 23.2217L3.33468 21.9137C1.00399 20.5704 0 19.4745 0 17.106C0 14.7376 1.00399 13.6417 3.33468 12.2984L5.77295 10.9904C6.92036 10.3895 7.96021 9.32896 7.96021 7.13724V3.49615C7.96021 -2.40737 16.1714 0.597417 12.4065 5.08692L5.8088 13.6417C4.76895 14.9497 4.33867 15.7981 4.37453 17.106C4.33867 18.414 4.76895 19.2624 5.8088 20.5704L12.4065 29.1252Z"
+                            fill="#E2C2E5" />
+                        <path
+                            d="M26.9284 11.5207C28.291 13.2175 28.1476 15.0911 25.9603 16.5404L20.1874 20.429C17.4981 22.2319 19.8647 26.5446 22.6256 24.9185L37.7931 16.0102C41.2353 13.9952 43.817 15.1971 43.9604 18.0959L44.319 25.5194C44.4983 29.3373 42.7413 30.8573 40.0879 30.8573C37.4345 30.8573 35.3189 28.1354 37.6855 24.565L41.5222 18.7322C42.2752 17.601 41.3787 16.7879 40.5899 16.7879C39.9086 16.7879 39.3708 16.8586 38.0799 18.5554L32.1994 26.1204C29.4384 29.6908 27.9324 30.8573 24.7053 30.8573C20.4742 30.8573 16.53 26.3325 16.53 17.3888C16.53 8.4452 22.1595 2.93054 30.299 2.93054C37.1118 2.93054 41.6297 5.12227 42.7413 8.86941C43.7453 12.1923 38.8329 14.278 36.5739 11.3439L32.5938 6.18278C31.4105 4.66271 29.0798 3.92035 26.9284 4.83946C24.4185 5.89997 24.5619 8.5866 25.8886 10.2127L26.9284 11.5207Z"
+                            fill="#E2C2E5" />
+                        <path
+                            d="M58.6653 12.0864C60.996 13.4297 62 14.5255 62 16.894C62 19.2625 60.996 20.3583 58.6653 21.7017L56.2271 23.0096C55.0796 23.6106 54.0398 24.6711 54.0398 26.8628V30.5039C54.0398 36.4074 45.8286 33.4026 49.5935 28.9131L56.1912 20.3583C57.2311 19.0504 57.6613 18.202 57.6255 16.894C57.6613 15.586 57.2311 14.7376 56.1912 13.4297L49.5935 4.87488C45.8286 0.38538 54.0398 -2.6194 54.0398 3.28411V6.9252C54.0398 9.11693 55.0796 10.1774 56.2271 10.7784L58.6653 12.0864Z"
+                            fill="#E2C2E5" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_123_4481">
+                            <rect width="62" height="34" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <ul>
+                    <li><a id="about-link" href="#">ABOUT</a></li>
+                    <li><a id="case-studies" href="#">CASE STUDIES</a></li>
+                    <li><a id="resume" href="#">RESUMÉ</a></li>
+                    <li><a id="lets-talk" href="#">LET'S TALK</a></li>
+                </ul>
+            </div>
+            <div class="overlay-trigger">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 68 68" fill="none">
+                    <circle class="overlay-circle" cx="34" cy="34" r="34" fill="url(#paint0_radial_365_15715)"/>
+                    <path d="M18 23H49.5" stroke="#F6E4F6" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M18 33.5H49.5" stroke="#F6E4F6" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M18 44H49.5" stroke="#F6E4F6" stroke-width="3" stroke-linecap="round"/>
+                    <defs>
+                      <radialGradient id="paint0_radial_365_15715" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(34 34) rotate(90) scale(34)">
+                        <stop stop-color="#DD0426"/>
+                        <stop offset="0.9999" stop-color="#DD0426" stop-opacity="0.5"/>
+                      </radialGradient>
+                    </defs>
+                  </svg>
+            </div>
+            <div class="overlay-close">✕</div>
+        </nav>
+        <div class="overlay"></div>
+    </section>
+
+        <!--HERO SECTION -->
+        <section id="section-1-hero">
+        <div class="content">
+            <img src="Images/Gia.d logo.png" class="largelogo">
+            <p>Hi I’m Gia, an Aussie UX/UI Designer & Creative.</p>
+            <div class="button-wrapper">
+            <a class="button-1" href="#">ABOUT ME</a>
+            </div>
+            <div class="stats">
+                <div class="stat1">
+                    <hr>
+                    <h1>5.5</h1>
+                    <p>YEARS OF AGENCY EXPERIENCE</p>
+                    <hr>
+                </div>
+                <div class="stat2">
+                    <hr>
+                    <h1>3</h1>
+                    <p>YEARS IN GRAPHIC DESIGN</p>
+                    <hr>
+                </div>
+                <div class="stat3">
+                    <hr>
+                    <h1>26</h1>
+                    <p>YEARS OF CREATIVE EVOLUTION</p>
+                    <hr>
+                </div>
+            </div>
+            <div  class="downarrow">
+                <svg id="downArrow" xmlns="http://www.w3.org/2000/svg" width="69" height="69" viewBox="0 0 69 69" fill="none">
+                    <path d="M34.5 46.5657L34.5 21.303" stroke="#FFFBF8" stroke-miterlimit="10" />
+                    <path d="M42.6212 39.0455L34.5 46.6818L26.3788 39.0455" stroke="#FFFBF8" stroke-miterlimit="10" />
+                    <path
+                        d="M0.999999 34.5C0.999998 53.0015 15.9985 68 34.5 68C53.0015 68 68 53.0015 68 34.5C68 15.9985 53.0015 0.999999 34.5 0.999999C15.9985 0.999998 0.999999 15.9985 0.999999 34.5Z"
+                        stroke="#FFFBF8" stroke-miterlimit="10" />
+                </svg>
+            </div>
+            <div id="about-section-top" class="enjoy">
+                <h1>I create experiences to be enjoyed.</h1>
+            </div>
+        </div>
+        </section>
+    </div>
+        <!--BODY SECTION -->
+    <section id="section-2-about">
+    <div class="mainContent">
+        <div class="about-gradient">
+            <div class="about-section">
+                <div class="about-grid">
+                    <div class="about-image">
+                        <img src="Images/about.png">
+                    </div>
+                    <div class="about-1">
+                        <p>Constantly on the go and chasing the next adventure, I'm intrigued by people, cultures and art. My heart belongs to many places and people, and those fragments are infused in my creative process. In the past 3.5 years, I've shaped brands, designs, content, and marketing strategies. With 5.5 years in agencies, both in the office and remote, I've delicately balanced client needs with impactful design solutions.</p>
+                    </div>
+                    <div class="about-2">
+                        <p>My ethos is that life is to be enjoyed, and in large part, I do that by working on projects and with people that inspire me. Whether it's been in a creative role or within the agency sphere, my goal remains constant – to create things that not only make the world more beautiful, but also elevate the overall enjoyment for those who interact with them.</p>
+                        <br>
+                        <a class="button-2" href="#">READ MY RESUMÉ</a>
+                    </div>
+                </div>
+            </div>
+            <div class="landscapes">
+                <h2>Sculpting digital landscapes that resonate and inspire.</h2>
+            </div>
+        </div>
+    </section>
+         <!--  My UX Skills section coded using CSS flex -->
+    <section id="section-3-skills">
+         <div class="skills-section">
+            <h1>Skills</h1>
+            <div class="skills-tables">
+            <div class="skill1">
+                <hr>
+                <h5>Branding & Design</h5>
+                <p>I specialise in branding and design, and believe that every user challenge can be met with ingenuity, allowing for solutions that not only address user needs but also elevate the brand experience. With a focus on graphic design, branding, UX research, UI design, and prototyping, I embark on each project with a dedication to balancing functionality and aesthetic appeal. Through a blend of creativity and strategic thinking, I strive to craft designs that not only resonate with users but also stand as a testament to the essence and identity of the brands I collaborate with.</p>
+                <br>
+                <hr>
+            </div>
+            <div class="skill2">
+                <hr>
+                <h5>User Empathy</h5>
+                <p>One of my key strengths in UX design is empathy and my capacity to immerse myself in the user’s perspective. My favourite part of the empathy process is crafting the user persona, delving into the genuine individuals on the other side of the screen. Employing Miro for empathy maps enhances my comprehension of user desires and needs, providing a visual aid in the process. The “I like”, “I wish”, “what if” exercise serves as a valuable tool to delve into the user’s mindset, fostering ideation focussed on user-centric solutions.</p>
+                <br>
+                <hr>
+            </div>
+            <div class="skill3">
+                <hr>
+                <h5>Qualitative Interviews</h5>
+                <p>In my UX methodology, qualitative interviews play a pivotal role. I not only seek to understand, but also prioritise putting interviewees at ease, creating an environment where they can freely share their insights. Crafting an interview script allows me to stay focused and extract valuable qualitative data, but I also like to encourage flexibility in the conversation to ensure I capture the little gems that can be found off script, enabling me to uncover nuanced user perspectives and refine design solutions that authentically address their needs and aspirations.</p>
+                <br>
+                <hr>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="section-4-toolkit">
+        <div class="myToolkit">
+            <div class="toolkit-container">
+                <div class="tools-title">
+                    <h1>My Toolkit</h1>
+                </div>
+                <div class="tools">
+                    <ul>
+                    <li>Figma</li>
+                    <li>VS Code</li>
+                    <li>Miro</li>
+                    <li>FigJam</li>
+                    <li>Adobe Illustrator</li>
+                    <li>Adobe InDesign</li>
+                    <li>Adobe Photoshop</li>
+                    <li>Adobe Lightroom</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section-5-projects">
+        <div class="projects">
+                <div class="projects-grid-container">
+                    <div class="sticky-title">
+                        <h1>Projects</h1>
+                        <a class="button-3">VIEW ALL PROJECTS</a>
+                    </div>
+                    <div class="grid-content">
+                      <div class="grid-item">
+                        <a href="./nomadnook.html">
+                            <img class="animatable fadeInDown" src="Images/nomadnook mockup.png">
+                        </a>
+                        <div class="animatable moveUp">
+                        <hr>
+                        <h6><a href="./nomadnook.html">NomadNook</a></h6>
+                        <p>Embark on a UX journey with NomadNook—an app designed to elevate the remote working experience. Tailored specifically for digital nomads, NomadNook provides a unique solution for remote workers, offering curated accommodations and third places, recommended by and for fellow remote workers, redefining the way they work and travel. Dive deeper into the intricacies of NomadNook's UX design in my portfolio, where we seek to transform our users’ work-life balance.</p>
+                        </div>
+                    </div>
+                      <div class="row-split">
+                        <div class="grid-item">
+                            <img class="animatable fadeInDown" src="Images/AYCC Mockup.jpg">
+                        <div class="animatable moveUp">
+                        <hr>
+                        <h6>AYCC</h6>
+                        <p>A revamp of the website for the Australian Youth Climate Coalition—a not-for-profit organisation with a powerful mission. Our goal was to infuse the site with a youthful, vibrant energy that resonates loudly and leaves a lasting impact. Join us in this endeavour as we aim to not only enhance the visual appeal but also drive increased volunteer sign-ups, igniting a wave of change in the fight for climate justice.</p>
+                        </div>
+                        </div>
+                        <div class="grid-item">
+                            <img class="animatable fadeInDown" src="Images/nomadnook mockup.png">
+                            <div class="animatable moveUp">
+                            <hr>
+                            <h6>Project 3</h6>
+                            <p>A revamp of the website for the Australian Youth Climate Coalition—a not-for-profit organisation with a powerful mission. Our goal was to infuse the site with a youthful, vibrant energy that resonates loudly and leaves a lasting impact. Join us in this endeavour as we aim to not only enhance the visual appeal but also drive increased volunteer sign-ups, igniting a wave of change in the fight for climate justice.</p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="grid-item">
+                            <img class="animatable fadeInDown" src="Images/Dep Health Mockup.png">
+                            <div class="animatable moveUp">
+                            <hr>
+                            <h6>Department of Health</h6>
+                            <p>Embark on a UX journey with NomadNook—an app designed to elevate the remote working experience. Tailored specifically for digital nomads, NomadNook provides a unique solution for remote workers, offering curated accommodations and third places, recommended by and for fellow remote workers, redefining the way they work and travel. Dive deeper into the intricacies of NomadNook's UX design in my portfolio, where we seek to transform our users’ work-life balance.</p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+        </div>
+    </section>
+    <section id="section-6-contact">
+        <div class="letsTalk">
+            <div class="left-contact">
+                <img src="Images/Contact.jpg">
+                <div class="talk">
+                    <h1>Let's Talk</h1>
+                    <h3>Spice up your site</h3>
+                    <h6>Email</h6>
+                    <p>weekend.gia@gmail.com</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+                        <g clip-path="url(#clip0_123_5003)">
+                          <path d="M5.5 11.0039C2.46767 11.0039 0 8.53624 0 5.50391C0 2.47157 2.46767 0.00390625 5.5 0.00390625C8.53233 0.00390625 11 2.47157 11 5.50391C11 8.53624 8.53233 11.0039 5.5 11.0039ZM5.5 1.83724C3.47783 1.83724 1.83333 3.48174 1.83333 5.50391C1.83333 7.52607 3.47783 9.17057 5.5 9.17057C7.52217 9.17057 9.16667 7.52607 9.16667 5.50391C9.16667 3.48174 7.52217 1.83724 5.5 1.83724ZM10.0833 44.0039H0.916667C0.673552 44.0039 0.440394 43.9073 0.268485 43.7354C0.0965771 43.5635 0 43.3304 0 43.0872V15.5872C0 15.3441 0.0965771 15.111 0.268485 14.9391C0.440394 14.7672 0.673552 14.6706 0.916667 14.6706H10.0833C10.3264 14.6706 10.5596 14.7672 10.7315 14.9391C10.9034 15.111 11 15.3441 11 15.5872V43.0872C11 43.3304 10.9034 43.5635 10.7315 43.7354C10.5596 43.9073 10.3264 44.0039 10.0833 44.0039ZM1.83333 42.1706H9.16667V16.5039H1.83333V42.1706ZM43.0833 44.0039H33.9167C33.6736 44.0039 33.4404 43.9073 33.2685 43.7354C33.0966 43.5635 33 43.3304 33 43.0872V26.5872C33 24.5064 32.1328 22.9444 30.6185 22.3046C29.0547 21.6409 27.1462 22.0479 25.6667 23.3239V43.0872C25.6667 43.3304 25.5701 43.5635 25.3982 43.7354C25.2263 43.9073 24.9931 44.0039 24.75 44.0039H15.5833C15.3402 44.0039 15.1071 43.9073 14.9352 43.7354C14.7632 43.5635 14.6667 43.3304 14.6667 43.0872V15.5872C14.6667 15.3441 14.7632 15.111 14.9352 14.9391C15.1071 14.7672 15.3402 14.6706 15.5833 14.6706H24.75C24.9532 14.6706 25.1506 14.7382 25.3112 14.8626C25.4718 14.9871 25.5865 15.1613 25.6373 15.3581C28.578 13.2424 33.4767 12.0654 37.3945 13.4074C40.3517 14.4212 43.8955 17.2079 44 24.7429V43.0891C43.9995 43.3319 43.9027 43.5646 43.7309 43.7361C43.559 43.9076 43.3261 44.0039 43.0833 44.0039ZM34.8333 42.1706H42.1667V24.7539C42.097 19.6481 40.2398 16.3187 36.8005 15.1417C32.5288 13.6787 27.1462 15.8879 25.465 17.9926C25.3458 18.1395 25.1841 18.246 25.0021 18.2975C24.82 18.3491 24.6265 18.3432 24.4479 18.2806C24.2694 18.218 24.1145 18.1018 24.0045 17.9478C23.8945 17.7939 23.8347 17.6098 23.8333 17.4206V16.5039H16.5V42.1706H23.8333V22.9206C23.8333 22.7982 23.8578 22.6771 23.9054 22.5644C23.9529 22.4517 24.0226 22.3496 24.1102 22.2642C26.1598 20.2732 28.9997 19.6316 31.3317 20.6161C33.5573 21.5584 34.8333 23.7346 34.8315 26.5872L34.8333 42.1706Z" fill="#E2C2E5"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_123_5003">
+                            <rect width="44" height="44" fill="white"/>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 45 45" fill="none">
+                        <g clip-path="url(#clip0_123_4993)">
+                          <path d="M35.1123 0.834961H9.8877C4.72852 0.834961 0.527344 5.03613 0.527344 10.1953V34.8047C0.527344 39.9639 4.72852 44.165 9.8877 44.165H35.1123C40.2715 44.165 44.4727 39.9639 44.4727 34.8047V10.1953C44.4727 5.03613 40.2715 0.834961 35.1123 0.834961ZM42.7148 34.8047C42.7148 38.9971 39.3047 42.4072 35.1123 42.4072H9.8877C5.69531 42.4072 2.28516 38.9971 2.28516 34.8047V10.1953C2.28516 6.00293 5.69531 2.59277 9.8877 2.59277H35.1123C39.3047 2.59277 42.7148 6.00293 42.7148 10.1953V34.8047Z" fill="#E2C2E5"/>
+                          <path d="M22.5 11.6895C16.541 11.6895 11.6895 16.541 11.6895 22.5C11.6895 28.459 16.541 33.3105 22.5 33.3105C28.459 33.3105 33.3105 28.459 33.3105 22.5C33.3105 16.541 28.459 11.6895 22.5 11.6895ZM22.5 31.5527C17.5078 31.5527 13.4473 27.4922 13.4473 22.5C13.4473 17.5078 17.5078 13.4473 22.5 13.4473C27.4922 13.4473 31.5527 17.5078 31.5527 22.5C31.5527 27.4922 27.4922 31.5527 22.5 31.5527ZM35.3057 7.19824C33.6533 7.19824 32.3086 8.54297 32.3086 10.1953C32.3086 11.8477 33.6533 13.1924 35.3057 13.1924C36.958 13.1924 38.3027 11.8477 38.3027 10.1953C38.3027 8.54297 36.958 7.19824 35.3057 7.19824ZM35.3057 11.4346C34.6201 11.4346 34.0664 10.8809 34.0664 10.1953C34.0664 9.50977 34.6201 8.95605 35.3057 8.95605C35.9912 8.95605 36.5449 9.50977 36.5449 10.1953C36.5449 10.8809 35.9912 11.4346 35.3057 11.4346Z" fill="#E2C2E5"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_123_4993">
+                            <rect width="45" height="45" fill="white"/>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                </div>
+            </div>
+            <div class="right-chilli">
+                <img src="Images/Chilli.jpg">
+            </div>
+        </div>
+    </section>
+    </div>
+    
+        <!--FOOTER -->
+        <section id="section-footer">
+        <div style="clear:both"></div>
+        <footer>
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="142" height="78" viewBox="0 0 142 78" fill="none">
+                        <g clip-path="url(#clip0_171_12047)">
+                            <path
+                                d="M28.4148 66.817C37.0378 77.1165 18.2314 84.0098 18.2314 70.4664V62.1133C18.2314 57.0853 15.8499 54.6523 13.2219 53.2737L7.6375 50.2731C2.29946 47.1913 0 44.6773 0 39.2437C0 33.8102 2.29946 31.2961 7.6375 28.2144L13.2219 25.2138C15.8499 23.8351 18.2314 21.4022 18.2314 16.3741V8.02102C18.2314 -5.52234 37.0378 1.37099 28.4148 11.6704L13.304 31.2961C10.9224 34.2968 9.93696 36.2431 10.0191 39.2437C9.93696 42.2444 10.9224 44.1907 13.304 47.1913L28.4148 66.817Z"
+                                fill="#E01F3F" />
+                            <path
+                                d="M61.6749 26.4299C64.7956 30.3226 64.4671 34.6208 59.4575 37.9459L46.2356 46.8666C40.0763 51.0026 45.4965 60.8966 51.82 57.1661L86.5583 36.7294C94.4422 32.1068 100.355 34.8641 100.684 41.5142L101.505 58.5447C101.915 67.3033 97.8914 70.7905 91.8142 70.7905C85.7371 70.7905 80.8918 64.546 86.312 56.3551L95.0992 42.9739C96.8238 40.3788 94.7707 38.5135 92.964 38.5135C91.4036 38.5135 90.1718 38.6757 87.2153 42.5684L73.747 59.9234C67.4235 68.1143 63.9743 70.7905 56.5832 70.7905C46.8926 70.7905 37.859 60.41 37.859 39.8922C37.859 19.3744 50.7524 6.72314 69.3945 6.72314C84.998 6.72314 95.3456 11.7512 97.8914 20.3476C100.191 27.9708 88.9399 32.7556 83.7661 26.0245L74.6504 14.1842C71.9403 10.6969 66.6023 8.99389 61.6749 11.1024C55.9262 13.5354 56.2547 19.6988 59.2933 23.4293L61.6749 26.4299Z"
+                                fill="#E01F3F" />
+                            <path
+                                d="M134.362 27.7276C139.701 30.8093 142 33.3234 142 38.7569C142 44.1905 139.701 46.7045 134.362 49.7862L128.778 52.7869C126.15 54.1655 123.769 56.5985 123.769 61.6265V69.9796C123.769 83.523 104.962 76.6296 113.585 66.3302L128.696 46.7045C131.078 43.7039 132.063 41.7575 131.981 38.7569C132.063 35.7563 131.078 33.8099 128.696 30.8093L113.585 11.1836C104.962 0.884173 123.769 -6.00915 123.769 7.5342V15.8873C123.769 20.9154 126.15 23.3483 128.778 24.727L134.362 27.7276Z"
+                                fill="#E01F3F" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_171_12047">
+                                <rect width="142" height="78" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="footer-about">
+                    <h6>I work at the intersection of form and function, blending creativity with strategic thinking to
+                        craft designs that resonate with the essence and identity of the brands I collaborate with.</h6>
+                    <p>© GIA DIMITROPOULOS 2023</p>
+                </div>
+                <div class="footer-socials">
+                    <ul>
+                        <li><a href="https://www.instagram.com/gia.dimi_/">Instagram</a></li>
+                        <li><a href="https://www.linkedin.com/in/giadimi/">LinkedIn</a></li>
+                        <li><a href="https://www.behance.net/giadimitro">Behance</a></li>
+                    </ul>
+                    <svg ID="upArrow" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M15 9.9576L15 20.5151" stroke="#DD0426" stroke-miterlimit="10" />
+                        <path d="M11.6061 13.1001L15 9.9088L18.394 13.1001" stroke="#DD0426" stroke-miterlimit="10" />
+                        <path
+                            d="M29 15C29 7.26801 22.732 1 15 1C7.26801 1 1 7.26801 1 15C1 22.732 7.26801 29 15 29C22.732 29 29 22.732 29 15Z"
+                            stroke="#DD0426" stroke-miterlimit="10" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+        </footer>
+        <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+  <script src="js/site.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+</body>
+
+</html>
