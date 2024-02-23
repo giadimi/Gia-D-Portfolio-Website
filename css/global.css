@@ -21,7 +21,9 @@
   font-family: 'tan-grandeur';
   src: url('../fonts/TAN-GRANDEUR.otf');
   src: url('../fonts/TAN-GRANDEUR.woff2') format('woff2'), url('../fonts/TAN-GRANDEUR.woff') format('woff'), url('../fonts/TAN-GRANDEUR.ttf') format('truetype');
+  font-weight: 500;
 }
+
 body {
   margin: 0;
   min-height: 100vh;
@@ -154,8 +156,8 @@ nav ul li {
   padding: 0;
   border: 0;
   float: left;
-  color: #e2c2e5;
-  font-family: 'NeueMontreal', Open Sans, sans-serif;
+  color: #E2C2E5;
+  font-family: 'NeueMontreal-Regular', Open Sans, sans-serif;
   align-items: center;
   justify-content: center;
 }
@@ -165,15 +167,14 @@ nav ul li {
   width: 100%;
   height: 100%;
   z-index: 0;
-  max-height: 620px;
+  height: 620px;
 }
 
 .left-contact h1 {
-  font-family: 'tan-grandeur';
-  font-size: 52px;
-  color: #e2c2e5;
-  text-transform: uppercase;
-  font-weight: 300;
+  color: #E2C2E5;
+  font-family: 'tan grandeur';
+  font-size: 72px;
+  font-weight: 500;
 }
 
 .left-contact h3 {
@@ -187,7 +188,6 @@ nav ul li {
   font-style: normal;
   font-weight: 700;
   line-height: 0px;
-  margin-bottom: 1.25em;
 }
 
 .left-contact p {
@@ -209,15 +209,9 @@ nav ul li {
 }
 
 @keyframes jiggle {
-  0% {
-    transform: rotate(0deg) scale(1.05, 1.05);
-  }
-  50% {
-    transform: rotate(2deg) scale(1.05, 1.05);
-  }
-  100% {
-    transform: rotate(-2deg) scale(1.05, 1.05);
-  }
+  0% {transform: rotate(0deg)scale(1.05,1.05);}
+  50% {transform: rotate(2deg)scale(1.05,1.05);}
+  100% {transform: rotate(-2deg) scale(1.05,1.05)}
 }
 
 .talk {
@@ -417,36 +411,37 @@ footer {
   .menu-toggle:checked + .overlay + .overlay-trigger + .overlay-circle .overlay-close:checked + .overlay + .overlay-trigger + .overlay-circle {
     display: none;
   }
-
-  .left-contact h1 {
-    font-size: 36px;
-  }
 }
+
 @media only screen and (max-width: 850px) {
   .left-contact {
     width: 100%;
     height: 500px;
     justify-content: center;
     text-align: center;
-  }
+}
 
-  .talk {
+.talk {
     padding: 10%;
     justify-content: center;
     left: auto;
-    width: auto;
-  }
-
-  .right-chilli {
-    display: none;
-  }
 }
+
+.right-chilli {
+    display: none;
+}
+}
+
 @media only screen and (max-width: 950px) {
   .left-contact svg {
     width: 45px;
     height: 45px;
     padding-top: 25px;
     padding-right: 20px;
+  }
+
+  .left-contact img {
+    z-index: -1;
   }
 }
 
@@ -458,7 +453,7 @@ footer {
   }
 
   .footer-logo {
-    padding-top: 20%;
+    padding-top: 8%;
   }
 
   .footer-about {
@@ -476,5 +471,11 @@ footer {
   .footer-socials li a {
     font-size: 12px;
     text-align: center;
+  }
+}
+
+@media only screen and (max-width:750px) {
+  .left-contact h1 {
+      font-size: 50px;
   }
 }

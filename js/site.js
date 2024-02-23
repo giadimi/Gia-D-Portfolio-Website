@@ -1,3 +1,13 @@
+// Wrapper for loading on document load
+$(document).ready(function () {
+
+  // Scroll reveal enjoy
+ScrollReveal().reveal('.enjoy', { delay: 200 });
+ScrollReveal().reveal('.landscapes', { delay: 400 });
+});
+
+// Menu overlay
+  
   const menuIcon = document.querySelector('.overlay-trigger');
   const overlay = document.querySelector('.overlay');
   const mobilenav = document.querySelector('.nav');
@@ -25,8 +35,6 @@
     overlay.classList.remove('show');
     overlayCircle.classList.toggle('show');
   });
-
-
 
   // Scroll animations for project section
 jQuery(function($) {
@@ -186,5 +194,30 @@ $("#lets-talk").click(function() {
   }, 2500);
 });
 
+// Open PDF
 
-ScrollReveal().reveal('.enjoy', { delay: 200 });
+document.addEventListener("adobe_dc_view_sdk.ready", function()
+    {
+        var adobeDCView = new AdobeDC.View({clientId: "7c4eb09d743c407fa0b0ec3665e32a40", divId: "adobe-dc-view"});
+        adobeDCView.previewFile(
+       {
+          content:   {location: {url:"/Users/georgiadimi/Documents/MyCode/Existing-Code-03/UXUI Resumé Gia Dimitropoulos.pdf"}},
+          metaData: {fileName: "UXUI Resumé Gia Dimitropoulos.pdf"}
+        }, {embedMode: "LIGHT_BOX"});
+	});
+    document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("resume-button").addEventListener("click", function () {
+                // Trigger the existing Adobe DC View script when the button is clicked
+                document.dispatchEvent(new Event("adobe_dc_view_sdk.ready"));
+            });
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("resume").addEventListener("click", function () {
+                // Trigger the existing Adobe DC View script when the button is clicked
+                document.dispatchEvent(new Event("adobe_dc_view_sdk.ready"));
+            });
+        });
+        $(".button-to-open-pdf").click(function(event) {
+    event.preventDefault(); // Prevent the default action
+    // Your code to open the PDF
+});
