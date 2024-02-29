@@ -70,7 +70,7 @@ body {
 
 
 .hero {
-  background-image: url('../Images/G-11.jpg');
+  background-image: url('../Images/aycc cover.png');
   background-size: cover;
   background-position: -78% 0px;
   min-height: 858px;
@@ -355,7 +355,13 @@ body {
 }
 /* ... Research Section ... */
 
-.insights-quotes p {
+.insights-quotes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  gap: 20px;
+}
+.insights-quotes {
   margin-bottom: 40px;
 }
 .research-question {
@@ -421,6 +427,17 @@ body {
   width: 100%;
   max-width: 312px;
   height: auto;
+}
+#right-slider {
+  display: grid;
+}
+#features-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#features-image {
+  width: 30%;
 }
 .swiper-wrapper {
   padding-bottom: 60px;

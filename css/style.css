@@ -472,68 +472,57 @@ h5 {
     width: 100%;
 }
 
-.Design-Tools {
-    width: 500px;
-}
-
-.tools h6 {
-    color: white;
-    font-family: 'PPNeueMontreal-Medium', Open Sans, sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    line-height: normal;
-    text-align: center;
-}
-
 .toolkit-container {
-    display: flex;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 1%;
+    padding: 0.1% 10%;
 }
 
-.UX-Tools, .FrontEnd-Tools {
-    flex: 1; /* Change the flex value to 1 for 20% width */
-    text-align: center;
-    padding: 5%;
+/* ... Tools Ticker ... */
+.tickerwrapper div,
+.tickerwrapper ul,
+.tickerwrapper li,
+.tickerwrapper p {
+  margin: 0;
+  padding: 0;
+  font-family: 'NeueMontreal-Regular', Open Sans, sans-serif;
+  font-size: 17px;
+  color: #DD0426;
 }
 
-.Design-Tools {
-    flex: 1.5; /* Change the flex value to 1.5 for 30% width */
-    text-align: center;
-    padding: 5%;
+.tickerwrapper {
+  position: relative;
+  left:0%;
+  background: #FCFBF8;
+  width: 100%;
+  height: 60px;
+  overflow: hidden;
+  cursor: pointer;
 }
 
-.tools {
-    width: 70%;
-    display: flex;
-    gap: 50px;
+ul.list {
+  position: relative;
+  display: inline-block;
+  list-style: none;
+  padding:0;
+  padding-top:20px;
+  margin:0;
 }
 
-.tools ul {
-    column-gap: 10px;
-    line-height: normal;
-    justify-content: flex-start;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    text-align: center;
-    list-style: none;
+ul.list.cloned {
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 
-.tools li {
-    list-style-position: outside;
-    color: white;
-    font-family: 'NeueMontreal-Regular', Open Sans, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    text-decoration: none;
+ul.list li {
+  float: left;
+  padding-left:49px;
+  white-space: nowrap;
 }
 
-.tools-title {
-    text-align: left;
-    margin-bottom: 2%;
+.bold {
+  font-weight:600;
 }
+
 
 /* ... Projects grid ... */
 .projects-grid-container {
@@ -853,6 +842,25 @@ h5 {
     .skills-section li {
         font-size: 14px;
     }
+ 
+    ul.list li {
+        font-size: 16px;
+        padding-left: 54px;
+    }
+
+    .tools-title {
+        margin: 0;
+    }
+
+    .tools-title h1 {
+        font-size: 55px;
+        text-align: center;
+    }
+    
+    .toolkit-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
 
     .projects-grid-container {
         display: block;
@@ -894,27 +902,6 @@ h5 {
 
 }
 
-@media only screen and (min-width:750px) and (max-width:950px){
-    .tools {
-        flex-direction: row;
-        width: 100%;
-    }
-
-    .toolkit-container {
-        flex-direction: column;
-    }
-
-    .tools-title {
-        width: 100%;
-        margin-bottom: 20px;
-        display: block;
-    }
-
-    .tools h6 {
-        width: auto;
-    }
-}
-
 @media only screen and (max-width:950px) {
 
     .left-contact svg {
@@ -924,41 +911,8 @@ h5 {
         padding-right: 20px;
     }
 
-    .tools-title {
-        text-align: center;
-        margin: 0;
-    }
-
-    .UX-Tools {
-        padding: 0;
-        padding-left: 10%;
-        width: 30%;
-    }
-
-    .FrontEnd-Tools {
-        padding: 0;
-    }
-
-    .Design-Tools {
-       padding: 0; 
-    }
-
-    .toolkit-container {
-        padding-bottom: 8%;
-    }
-
     .left-contact img {
         z-index: -1;
-    }
-
-    .tools h6 {
-        margin: 15px;
-    }
-}
-
-@media only screen and (min-width:950px) and (max-width:1200px){
-    .tools {
-        width: 68%;
     }
 }
 
@@ -1022,51 +976,7 @@ h5 {
         line-height: 100%;
         font-size: 55px;
     }
-
-    .toolkit-container {
-        display: block;
-        margin: 0 auto;
-        padding-bottom: 5%;
-    }
     
-    .tools-title {
-        width: 100%;
-        margin-bottom: 0;
-        padding: 0;
-        text-align: center;
-        padding-top: 2%;
-    }
-
-    .tools-title h1 {
-        font-size: 55px;
-    }
-    
-    .UX-Tools {
-        width: 100%;
-        padding: 0;
-    }
-
-    .Design-Tools {
-        width: 100%;
-        padding: 0;
-    }
-
-    .tools {
-        width: 100%;
-        flex-direction: column;
-        justify-content: center;
-        padding: 0;
-        padding-bottom: 5%;
-        gap: 10px;
-    }
-    
-    .tools ul {
-        column-count: 1;
-        margin: 0 auto;
-        text-align: center;
-        list-style-type: none;
-    }
-
     #upArrow {
         width: 50px;
         height: 50px;
@@ -1101,10 +1011,3 @@ h5 {
         width:80%;
     }
   }
-
- @media only screen and (min-width:750px) and (max-width:1200px) {
-
-    .tools-title {
-        padding-right: 5%;
-    }
-}

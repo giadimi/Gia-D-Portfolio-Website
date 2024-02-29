@@ -194,30 +194,54 @@ $("#lets-talk").click(function() {
   }, 2500);
 });
 
-// Open PDF
+// Tools Ticker
 
-document.addEventListener("adobe_dc_view_sdk.ready", function()
-    {
-        var adobeDCView = new AdobeDC.View({clientId: "7c4eb09d743c407fa0b0ec3665e32a40", divId: "adobe-dc-view"});
-        adobeDCView.previewFile(
-       {
-          content:   {location: {url:"/Users/georgiadimi/Documents/MyCode/Existing-Code-03/UXUI Resumé Gia Dimitropoulos.pdf"}},
-          metaData: {fileName: "UXUI Resumé Gia Dimitropoulos.pdf"}
-        }, {embedMode: "LIGHT_BOX"});
-	});
-    document.addEventListener("DOMContentLoaded", function () {
-            document.getElementById("resume-button").addEventListener("click", function () {
-                // Trigger the existing Adobe DC View script when the button is clicked
-                document.dispatchEvent(new Event("adobe_dc_view_sdk.ready"));
-            });
-        });
-        document.addEventListener("DOMContentLoaded", function () {
-            document.getElementById("resume").addEventListener("click", function () {
-                // Trigger the existing Adobe DC View script when the button is clicked
-                document.dispatchEvent(new Event("adobe_dc_view_sdk.ready"));
-            });
-        });
-        $(".button-to-open-pdf").click(function(event) {
-    event.preventDefault(); // Prevent the default action
-    // Your code to open the PDF
+var $tickerWrapper = $(".tickerwrapper");
+var $list = $tickerWrapper.find("ul.list");
+var $clonedList = $list.clone();
+var listWidth = 10;
+
+$list.find("li").each(function (i) {
+    listWidth += $(this).outerWidth(true);
+});
+
+var endPos = $tickerWrapper.width() - listWidth;
+
+$list.add($clonedList).css({
+    "width" : listWidth + "px"
+});
+
+$clonedList.addClass("cloned").appendTo($tickerWrapper);
+
+// TimelineMax
+var infinite = new TimelineMax({repeat: -1, paused: true});
+var time = 40;
+
+infinite
+    .fromTo($list, time, {rotation: 0.01, x: 0}, {force3D: true, x: -listWidth, ease: Linear.easeNone}, 0)
+    .fromTo($clonedList, time, {rotation: 0.01, x: listWidth}, {force3D: true, x: 0, ease: Linear.easeNone}, 0)
+    .set($list, {force3D: true, rotation: 0.01, x: listWidth})
+    .to($clonedList, time, {force3D: true, rotation: 0.01, x: -listWidth, ease: Linear.easeNone}, time)
+    .to($list, time, {force3D: true, rotation: 0.01, x: 0, ease: Linear.easeNone}, time)
+    .progress(1).progress(0)
+    .play();
+
+// Pause/Play
+$tickerWrapper.on("mouseenter", function(){
+    infinite.pause();
+}).on("mouseleave", function(){
+    infinite.play();
+});
+
+// Adjust the initial position of the cloned list
+infinite.eventCallback("onStart", function() {
+    $clonedList.css({x: listWidth});
+});
+
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+// create the scrollSmoother before your scrollTriggers
+ScrollSmoother.create({
+  smooth: 1, // how long (in seconds) it takes to "catch up" to the native scroll position
+  effects: true, // looks for data-speed and data-lag attributes on elements
+  smoothTouch: 0.1, // much shorter smoothing time on touch devices (default is NO smoothing on touch devices)
 });
