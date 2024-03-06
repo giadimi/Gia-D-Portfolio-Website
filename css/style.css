@@ -378,7 +378,7 @@ h2 {
 
 .skills-section hr {
     width: 80%;
-    background-color: #DD0426;
+    background-color: #292929;
     border: none;
     height: 1px;
     margin-top: 2%;
@@ -415,7 +415,7 @@ h2 {
 }
 
 h5 {
-    color: #DD0426;
+    color: #292929;
     font-family: 'NeueMontreal-Regular', Open Sans, sans-serif;
     font-size: 18px;
     font-style: normal;
@@ -425,7 +425,7 @@ h5 {
 }
 
 .skills-section h1 {
-    color: #DD0426;
+    color: #292929;
     text-align: left;
     padding-left: 10%;
     padding-top: 6%;
@@ -434,7 +434,7 @@ h5 {
 }
 
 .skills-section li {
-    color: #DD0426;
+    color: #292929;
     font-family: 'NeueMontreal-Regular', Open Sans;
     font-size: 16px;
     font-style: normal;
@@ -451,7 +451,7 @@ h5 {
 }
 
 .bold-italic {
-    color: #DD0426;
+    color: #292929;
     font-family: 'NeueMontreal-Regular', Open Sans;
     font-size: 18px;
     font-style: italic;
@@ -468,7 +468,7 @@ h5 {
 }
 
 .myToolkit {
-    background: #292929;
+    background: #DD0426;
     width: 100%;
 }
 
@@ -491,7 +491,7 @@ h5 {
 .tickerwrapper {
   position: relative;
   left:0%;
-  background: #FCFBF8;
+  background: #E2C2E5;
   width: 100%;
   height: 60px;
   overflow: hidden;

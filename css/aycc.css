@@ -4,6 +4,7 @@ img {
 body {
   font-family: 'NeueMontreal', 'Open Sans', sans-serif;
   font-weight: 400;
+  background-color: #FCFBF8;
 }
 
 .tan-grandeur {
@@ -394,7 +395,7 @@ body {
 .definition-section {
   padding-bottom: 10%;
 }
-.affinity-img {
+.empathy-img {
   margin-top: 22px;
 }
 .problem-img {
@@ -405,17 +406,17 @@ body {
   display: none;
 }
 @media (min-width: 768px) {
-  .affinity-img {
+  .empathy-img {
     margin-top: 0;
   }
   .definition-section h4 {
     /* margin-top: 0; */
   }
-  .definition-affinity {
+  .definition-empathy {
     display: flex;
     flex-direction: column;
   }
-  .affinity-content {
+  .empathy-content {
     order: 1;
   }
   .insight-hr {
@@ -568,6 +569,12 @@ body {
   padding-bottom: 20px;
   max-width: 1000px;
 }
+
+.interactions {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 .lofi-img-container-lg {
   display: none;
   overflow: auto;
@@ -859,5 +866,11 @@ body {
   .project-card {
     flex-basis: 30%;
     margin-top: 16px;
+  }
+}
+
+@media (max-width:750px) {
+  .figma {
+    width:320px;
   }
 }
