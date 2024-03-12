@@ -567,6 +567,7 @@ ul.list li {
     margin-top: 20px;
     background: transparent;
     transition: 0.2s transform ease-in-out;
+    color:  #E01F3F;
     }
       
     .button-3:hover {
@@ -576,6 +577,10 @@ ul.list li {
     border: 1px solid #E01F3F;
     background: rgba(246, 228, 246, 0.40);
     transition: 0.5s ease-in;
+    }
+
+    .button-3:visited {
+        color:  #E01F3F;
     }
     
 
