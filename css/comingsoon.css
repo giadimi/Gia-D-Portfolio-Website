@@ -143,8 +143,8 @@ object-fit: cover;
     letter-spacing: -25%;
     text-align: center;
     line-height: normal;
-    margin-top: 80px;
-    margin-bottom: 50px;
+    margin-top: 150px;
+    margin-bottom: 30px;
 }
 
 .hero-content {
@@ -154,6 +154,17 @@ object-fit: cover;
     justify-content: center;
     flex-direction: column;
 }
+
+@media only screen and (min-width:550px) and (max-width:950px){
+  .hero-content h1 {
+    font-size: 90px;
+  }
+}
+
+@media only screen and (max-width:550px){
+  .hero-content h1 {
+    font-size: 72px;
+  }
 
 /* Contact Section */
 
