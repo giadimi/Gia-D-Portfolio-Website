@@ -230,7 +230,7 @@ object-fit: cover;
   }
 
   .parallax-item:nth-child(2) {
-    background: url("/images/aromes-desktop.png");
+    background: url("/Images/aromes-desktop.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Parallax Effect for DIV 2 */
