@@ -204,7 +204,7 @@ object-fit: cover;
   }
 
   .parallax-item:nth-child(2) {
-    background: url("/images/aromes/desktop\ mockup.png");
+    background: url("/images/aromes-desktop.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Parallax Effect for DIV 2 */
@@ -231,7 +231,7 @@ object-fit: cover;
     background: url("/Images/nomadnook\ mockup.png");
     background-size: cover;
     background-position: center;
-    background-attachment: fixed; /* Parallax Effect for DIV 4 */
+    background-attachment: fixed; /* Parallax Effect for DIV 6 */
     min-height: 600px;
   }
   
