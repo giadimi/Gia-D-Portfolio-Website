@@ -2,6 +2,32 @@ body {
     margin: 0;
 }
 
+@font-face {
+  font-family: 'NeueMontreal';
+  src: url('../fonts/PPNeueMontreal-Regular.otf');
+  src: url('../fonts/PPNeueMontreal-Regular.woff2') format('woff2'), url('../fonts/PPNeueMontreal-Regular.woff') format('woff'), url('../fonts/PPNeueMontreal-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'NeueMontreal';
+  src: url('../fonts/PPNeueMontreal-Medium.otf');
+  src: url('../fonts/PPNeueMontreal-Medium.woff2') format('woff2'), url('../fonts/PPNeueMontreal-Medium.woff') format('woff'), url('../fonts/PPNeueMontreal-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'NeueMontreal';
+  src: url('../fonts/PPNeueMontreal-Bold.otf');
+  src: url('../fonts/PPNeueMontreal-Bold.woff2') format('woff2'), url('../fonts/PPNeueMontreal-Bold.woff') format('woff'), url('../fonts/PPNeueMontreal-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'tan-grandeur';
+  src: url('../fonts/TAN-GRANDEUR.otf');
+  src: url('../fonts/TAN-GRANDEUR.woff2') format('woff2'), url('../fonts/TAN-GRANDEUR.woff') format('woff'), url('../fonts/TAN-GRANDEUR.ttf') format('truetype');
+  font-weight: 500;
+}
+
 /* ... NAVIGATION ... */
   /* ... Responsive Nav ... */
   @media only screen and (max-width: 750px) {
