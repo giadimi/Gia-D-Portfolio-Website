@@ -136,9 +136,9 @@ object-fit: cover;
 }
 
 .hero-content h1 {
-    font-family: 'tan grandeur';
+    font-family: 'TAN-GRANDEUR';
     color:#E2C2E5;
-    font-size: 140px;
+    font-size: 90px;
     font-weight: 500;
     letter-spacing: -25%;
     text-align: center;
@@ -148,7 +148,7 @@ object-fit: cover;
 
 .parallax-section h2 {
     color: #000;
-    font-family: "Tan Grandeur";
+    font-family: 'tan-grandeur';
     font-size: 82px;
     font-style: normal;
     font-weight: 400;
@@ -267,7 +267,7 @@ object-fit: cover;
     }
 
     .hero-content h1 {
-        font-size: 5.5rem;
+        font-size: 3rem;
     }
 
     .hero-content h3 {
@@ -288,6 +288,20 @@ object-fit: cover;
     width: 90%;
     padding-top: 0;
   }
+
+  .parallax-item:nth-child(2) {
+    min-height: 300px;
+  }
+
+  .parallax-item:nth-child(4) {
+    min-height: 300px;
+  }
+
+  .parallax-item:nth-child(6) {
+    min-height: 300px;
+  }
+  
+
   }
 
   /* Contact Section */
