@@ -96,10 +96,11 @@ body {
 }
 .content {
   padding-top: 218px;
-  text-align: center;
+  text-align: left;
   font-family: 'NeueMontreal', Open Sans, sans-serif;
   color: white;
   letter-spacing: 0.7px;
+  padding-left: 10%;
 }
 .hero .downarrow {
   padding-top: 82px;

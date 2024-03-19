@@ -49,30 +49,36 @@ body {
   display: inline-flex;
   padding-top: 36px;
   padding-bottom: 36px;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   gap: 65px;
+  padding-left: 10%;
 }
 
-nav a {
+.nav-links {
   text-align: center;
-  font-family: 'NeueMontreal', Open Sans, sans-serif;
+  font-family: 'NeueMontreal-Regular', Open Sans, sans-serif; 
   font-size: 14px;
   font-weight: 500;
   text-decoration: none;
   margin: 0 33px;
-  background-image: linear-gradient(to right, #dd0426, #dd0426 50%, #e2c2e5 50%);
-  background-size: 200% 100%;
-  background-position: -100%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 0.3s ease-in-out;
+  background-image: linear-gradient(
+        to right,
+        #DD0426,
+        #DD0426 50%,
+        #E2C2E5 50%
+      );
+      background-size: 200% 100%;
+      background-position: -100%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: all 0.3s ease-in-out;
 }
 
 nav a:hover {
   background-position: 0;
   font-style: italic;
-}
+ }
 
 nav a:hover::before {
   width: 100%;
@@ -91,7 +97,7 @@ nav ul li {
 }
 
 .nav-grad {
-  background: linear-gradient(180deg, #a70517 0%, rgba(231, 103, 123, 0) 100%);
+  background: linear-gradient(180deg, #A70517 0%, rgba(231, 103, 123, 0.00) 100%);
 }
 
 /* ... MOBILE NAV ... */
@@ -172,9 +178,10 @@ nav ul li {
 
 .left-contact h1 {
   color: #E2C2E5;
-  font-family: 'tan grandeur';
-  font-size: 72px;
+  font-family: 'TAN-GRANDEUR';
+  font-size: 38px;
   font-weight: 500;
+  text-transform: uppercase;
 }
 
 .left-contact h3 {
@@ -421,6 +428,10 @@ footer {
     text-align: center;
 }
 
+.left-contact h1 {
+  font-size: 32px;
+}
+
 .talk {
     padding: 10%;
     justify-content: center;
@@ -497,10 +508,4 @@ footer {
 
 .case-study-link:hover {
   text-decoration: underline;
-}
-
-@media only screen and (max-width:750px) {
-  .left-contact h1 {
-      font-size: 50px;
-  }
 }
