@@ -488,7 +488,7 @@ h5 {
 
 .skills-section li {
     color: #292929;
-    font-family: 'NeueMontreal-Regular', Open Sans;
+    font-family: 'NeueMontreal-Regular', Open Sans, sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -1035,7 +1035,7 @@ ul.list li {
   .right-hero {
     width: 100%;
     align-items: center;
-    z-index: 2;
+    z-index: 1;
     padding-top: 10%;
     padding-right: 0;
   }
@@ -1101,10 +1101,6 @@ ul.list li {
   .right-hero {
     padding-top: 15%;
   }
-  
-  .enjoy {
-    margin-top: -120px;
-  }
 
   .about-image {
     padding-top: 5%;
@@ -1115,9 +1111,9 @@ ul.list li {
   }
 }
 
-@media only screen and (max-width:400px){
-  .enjoy {
-    margin-top: 0;
+@media only screen and (max-width:420px){
+  .about-grid {
+    margin-top: 15%;
   }
 }
 
