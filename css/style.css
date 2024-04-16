@@ -1140,3 +1140,9 @@ ul.list li {
     width: 80%;
   }
 }
+
+@media only screen and (max-width:550px) {
+  h1 {
+    letter-spacing: 2px;
+  }
+}
