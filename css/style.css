@@ -1145,4 +1145,12 @@ ul.list li {
   h1 {
     letter-spacing: 2px;
   }
+
+  .landscapes h2 {
+    letter-spacing: 2px;
+  }
+
+  .grid-item h6 {
+    letter-spacing: -2px;
+  }
 }
