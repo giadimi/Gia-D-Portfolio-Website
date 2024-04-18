@@ -92,3 +92,9 @@ object-fit: cover;
     font-size: 54px;
   }
 }
+
+@media only screen and (max-width:550px) {
+  h1 {
+    letter-spacing: 2px;
+  }
+}

@@ -315,3 +315,9 @@ object-fit: cover;
     background-attachment: scroll;
   }
   }
+
+  @media only screen and (max-width:550px) {
+    h1 {
+      letter-spacing: 2px;
+    }
+  }
